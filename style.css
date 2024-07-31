@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+    height: 100vh;
+    background-color: #727c42;
+}
+
+.Rihab {
+    margin-top: 0;
+}
+
+.Rihab h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 900;
+    font-size: 5vw;
+    color: #ffeed5;
+    margin-bottom: 16px;
+}
+
+.Rihab hr {
+    width: 50%;
+    border: 1px solid #fde5c1;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+h1.dev {
+    margin-top: 20px;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 900;
+    font-size: 2vw;
+    color: #ffeed5;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+}
+
+.Rihab p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffeed5;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.LinkedIn {
+    padding: 10px 60px;
+    border-radius: 32px;
+    margin-top: 20px;
+    border: 0.5px;
+    background-color: #ffeed5;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.LinkedIn:hover {
+    background-color: #fde5c1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .Rihab h1 {
+        font-size: 8vw;
+    }
+
+    h1.dev {
+        font-size: 2.8vw;
+    }
+
+    .Rihab p {
+        font-size: 3vw;
+    }
+
+    .LinkedIn {
+        padding: 10px 20px;
+    }
+}
