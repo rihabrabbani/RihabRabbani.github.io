@@ -61,6 +61,178 @@ h1.dev {
     background-color: #fde5c1;
     transform: scale(1.05);
 }
+.About-Me {
+    display: flex;
+    padding: 1px;
+    height: 100vh;
+    background-color: #fde5c1;
+    align-items: center;
+    justify-content : space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.About-Me h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 900;
+    font-size: 5vw;
+    color: #727c42;
+    margin-bottom: 0px;
+}
+
+.About-Me hr {
+    border: 1px solid #727c42;
+    margin: 10px 0px;
+    opacity: 1;
+}
+
+.About-Me p {
+    font-family: 'Open Sans', sans-serif;
+    margin : 0px;
+    color: #727c42;
+    font-size: 1.2vw;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+img{
+    border: 0.5px solid grey;
+    transition: transform 0.3s ease;
+}
+img:hover{
+
+    transform: scale(1.2);
+}
+
+.Projects {
+    padding: 1px;
+    height: 100vh;
+    background-color: #fde5c1;
+
+}
+
+.inline-elements {
+    margin: 5% 0px 5% 5% ;
+    display: flex;
+    align-items: center;
+
+}
+
+.inline-elements hr {
+    flex-grow: 0.7; /* This will make the HR take up the remaining space */
+    margin: 0 0px; /* Add margin to separate the HR and H1 */
+    margin-left: auto;
+    border: 1.5px solid #727c42;
+    opacity: 1;
+}
+
+.inline-elements h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 900;
+    font-size: 5vw;
+    color: #727c42;
+    margin: 0;
+}
+
+.Projects-List{
+    position: relative;
+    top: 10%;
+    transform: translateY(-10%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project1{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 265px;
+    background-color: #727c42;
+    border-radius: 72px;
+    padding: 32px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project1:hover {
+    background-color: #778145;
+    transform: scale(1.1);
+}
+
+.project1 p{
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fde5c1;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.pro-name{
+    font-size: 18px !important;
+    font-weight: 700 !important; 
+}
+
+.Projects svg {
+    margin-top: 10px;
+    width: 32px; /* Set your desired width */
+    height: 32px; /* Set your desired height */
+    fill: #ffeed5;
+}
+
+.outro {
+    height: 100vh;
+    background-color: #727c42;
+}
+
+.outro-Rihab {
+    margin-top: 0;
+}
+
+.outro-Rihab h1 {
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 900;
+    font-size: 4vw;
+    color: #ffeed5;
+    margin-bottom: 16px;
+}
+
+.outro hr {
+    width: 50%;
+    border: 1px solid #fde5c1;
+    opacity: 1;
+}
+
+.outro-Rihab p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffeed5;
+    font-size: 1vw;
+    margin-top: 20px;
+    letter-spacing: 1px !important;
+    font-weight: 400;
+}
+
+.email-button {
+    padding: 10px 60px;
+    border-radius: 32px;
+    margin-top: 20px;
+    border: 0.5px;
+    background-color: #ffeed5;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.email-button:hover {
+    background-color: #fde5c1;
+    transform: scale(1.05);
+}
 
 @media (max-width: 768px) {
     .Rihab h1 {
@@ -78,4 +250,72 @@ h1.dev {
     .LinkedIn {
         padding: 10px 20px;
     }
+
+
+    .About-Me p {
+        font-size: 2.3vw;
+    }
+    .About-Me h1{
+        text-align: center;
+    }
+    
+    .About-Me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline-elements h1 {
+        font-size: 7vw;
+    }
+    
+    .Projects-List{
+        margin-top: 2px !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project1{
+        text-align: center;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: fit-content;
+        padding: 8px;
+    }
+
+    .Projects-List p{
+        margin: 0px;
+        font-size: 12px;
+    }
+
+    .Projects svg {
+        margin: 0%;
+        width: 22px; /* Set your desired width */
+        height: 22px; /* Set your desired height */
+        fill: #ffeed5;
+    }
+
+    .inline-elements {
+        margin: 5% 0px 2% 2% ;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .outro-Rihab h1 {
+        font-size: 8vw;
+    }
+
+    .outro-Rihab p {
+        font-size: 3vw;
+    }
+
+    .email-button {
+        padding: 10px 20px;
+    }
+    
+
 }
